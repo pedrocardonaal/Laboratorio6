@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Control de Versiones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Laboratorio 6</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina1.html">Página 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pagina2.html">Página 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina3.html">Página 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white text-center py-5 mb-4 shadow-sm">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-success">Control de Versiones con Git</h1>
+            <p class="lead mb-0">Gestión de fuentes, ramas y colaboración en la nube.</p>
+        </div>
+    </header>
+
+    <div class="container my-4">
+        <section class="mb-5">
+            <h3 class="h4 text-dark mb-3">Flujo Fundamental del Trabajo</h3>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card border-success h-100 shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            Paso 1 <span class="badge bg-light text-dark float-end">Staging</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">git add</h5>
+                            <p class="card-text small text-muted">Añade cambios del directorio de trabajo al área de preparación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-primary h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            Paso 2 <span class="badge bg-light text-dark float-end">Commit</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">git commit</h5>
+                            <p class="card-text small text-muted">Registra una instantánea de los cambios preparados en el repositorio local.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-dark h-100 shadow-sm">
+                        <div class="card-header bg-dark text-white">
+                            Paso 3 <span class="badge bg-light text-dark float-end">Remote</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">git push</h5>
+                            <p class="card-text small text-muted">Envía las confirmaciones locales a la rama remota de GitHub.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 bg-white p-4 rounded shadow-sm">
+            <h3 class="h4 text-success mb-3">Fundamentos de Git en la Ingeniería de Software</h3>
+            <p>Git es un sistema de control de versiones distribuido diseñado para rastrear cambios en el código fuente durante el desarrollo de software. A diferencia de los sistemas centralizados tradicionales, cada directorio de Git en cada computadora es un repositorio completo con capacidades de seguimiento de historial.</p>
+            <p>El uso de repositorios remotos alojados en plataformas como GitHub o GitLab permite a equipos multidisciplinarios coordinar tareas de programación de manera paralela. Las características de ramas (branches) y fusiones (merges) evitan sobreescribir el trabajo de otros colaboradores de manera no planificada.</p>
+            <p>Integrar buenas prácticas en el mensaje de cada commit garantiza una rastreabilidad clara en proyectos extensos. Documentar de forma precisa qué cambios se implementan facilita la detección de errores y el regreso a versiones anteriores estables en caso de imprevistos.</p>
+        </section>
+
+        <section class="mb-5">
+            <h3 class="h4 text-secondary mb-4">Servidores y Flujos de Trabajo</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="servidores1.jpeg" class="img-fluid rounded shadow-sm" alt="Servidores de código">
+                </div>
+                <div class="col-md-4">
+                    <img src="servidores2.jpg" class="img-fluid rounded shadow-sm" alt="Colaboración en terminal">
+                </div>
+                <div class="col-md-4">
+                    <img src="servidores3.png" class="img-fluid rounded shadow-sm" alt="Estructura de ramas">
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 text-center">
+            <button type="button" class="btn btn-outline-success btn-lg shadow-sm" data-bs-toggle="modal" data-bs-target="#modalGit">
+                Ver comandos Git más comunes
+            </button>
+
+            <div class="modal fade" id="modalGit" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-success text-white">
+                            <h5 class="modal-title">Comandos de Consola</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start">
+                            <ul>
+                                <li><code>git status</code> - Revisa el estado de la rama.</li>
+                                <li><code>git log</code> - Muestra el historial de commits.</li>
+                                <li><code>git pull</code> - Descarga los últimos cambios del servidor.</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

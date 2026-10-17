@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Tecnologías Frontend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Laboratorio 6</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pagina1.html">Página 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">Página 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina3.html">Página 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary text-white text-center py-5 mb-4 shadow-sm">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Evolución del Desarrollo Frontend</h1>
+            <p class="lead mb-0">Explorando librerías, estándares CSS y diseño web responsivo.</p>
+        </div>
+    </header>
+
+    <div class="container my-4">
+        <div class="alert alert-info alert-dismissible fade show shadow-sm" role="alert">
+            <strong>¡Aviso importante!</strong> Estás navegando en la Página 1 de la sección de contenidos interactivos.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <section class="mb-5 bg-white p-4 rounded shadow-sm">
+            <h3 class="h4 text-primary mb-3">La Importancia del Frontend Moderno</h3>
+            <p>El desarrollo web en el lado del cliente ha experimentado una transformación radical en la última década. Lo que comenzó como maquetaciones estáticas creadas exclusivamente con código HTML estructurado y estilos CSS rudimentarios, ha evolucionado hacia arquitecturas complejas impulsadas por frameworks reactivos y sistemas de diseño adaptativos.</p>
+            <p>La adopción de herramientas como Bootstrap simplifica sustancialmente la creación de interfaces responsivas gracias a su sistema de cuadrícula flexible (Grid System). Esto asegura que cualquier aplicación web se visualice de forma óptima tanto en dispositivos móviles compactos como en monitores de alta resolución sin necesidad de reescribir consultas de medios avanzadas.</p>
+            <p>Además, el control de versiones mediante herramientas como Git y plataformas colaborativas como GitHub resultan fundamentales para mantener un historial organizado de las iteraciones del código. Esto permite integrar componentes modulares de manera rápida y segura en entornos de trabajo distribuidos.</p>
+        </section>
+
+        <section class="mb-5">
+            <h3 class="h4 text-secondary mb-4">Galería Visual: Herramientas de Desarrollo</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="prototipado.png" class="card-img-top rounded-top" alt="Diseño de interfaz">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Prototipado e interfaces de usuario web.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="entornos.jpeg" class="card-img-top rounded-top" alt="Código y editores">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Entornos de desarrollo e inspección de código.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="moviles.jpeg" class="card-img-top rounded-top" alt="Visualización móvil">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Pruebas de diseño en dispositivos móviles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h3 class="h4 text-secondary mb-3">Preguntas Frecuentes</h3>
+            <div class="accordion shadow-sm" id="accordionP1">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            ¿Qué es Bootstrap?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionP1">
+                        <div class="accordion-body">
+                            Bootstrap es un framework CSS de código abierto que incluye plantillas de diseño basadas en HTML y CSS para tipografía, formularios, botones, tablas y navegación.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            ¿Por qué utilizar un CDN?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionP1">
+                        <div class="accordion-body">
+                            Permite cargar las librerías desde servidores distribuidos globalmente, acelerando la carga inicial de las páginas web sin descargar los archivos localmente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
